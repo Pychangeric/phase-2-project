@@ -20,9 +20,9 @@ const Home = () => {
         {movies.map((movie, index) => (
           <div key={index} className="card">
             <div className={index === 0 ? "card-body big-card" : "card-body"}>
-              <h5 className="card-title">{movie.title}</h5>
-              <p className="card-text">{movie.description}</p>
+              <h1 className="card-title">{movie.title}</h1>
               <img src={movie.image} alt={movie.title} />
+              <h1 className="card-text">{movie.description}</h1>
             </div>
           </div>
         ))}
